@@ -26,3 +26,30 @@ let checkTypeof = combineArray.map((element: number | string) => {
 })
 console.log(MultiplyNums, mapNames, checkTypeof)
 
+// 'filter' method
+let positiveNumbers: number [] = [2,3,4,5,6]
+let filteredArray: number [] = positiveNumbers.filter((num:number) => num > 3);
+// let arrayFilter: number [] = positiveNumbers.filter((num:number) => num <4);
+console.log("FilteredArray", filteredArray);
+
+// 'sort' method
+let sortNumbers: number [] = [100,2,30,5,40,6];
+let sortedResult = sortNumbers.sort((a: number, b: number) => a - b ); //"a-b" ascending, "b-a" descending 
+console.log(sortedResult);
+
+// 'push' method
+sortedResult.push(200);
+console.log(sortedResult);
+
+// 'pop' method
+sortedResult.pop();
+console.log(sortedResult);
+
+// 'shift' method
+sortedResult.shift();
+console.log(sortedResult);
+
+
+// 'unshift' method
+sortedResult.unshift(1);
+console.log(sortedResult);
