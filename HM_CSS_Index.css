@@ -35,7 +35,14 @@ img {
     margin:-12px 0 -15px 0;
 }
 
-.final{
+
+/*.final{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}*/
+
+footer {
     background-color: black;
     text-align: center;
     color: aliceblue;
