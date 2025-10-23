@@ -93,7 +93,7 @@ interface User {
     password?: string | number;
 }
 
- const user: User = {
+ const user : User = {
     name: "Rob",
     email: "rob@mail.com",
     role: "admin",   // can not change role to guest, as the property for role has been prededine as a string literal and ca joose only from list - "user", "admin", "superuser"
@@ -115,7 +115,7 @@ interface UserPermissions extends User {
     permissions: string;
 }
 
-const thirdUser : UserPermissions = {
+const thirdUser: UserPermissions = {
     name: "Tom",
     email:"tom@MediaList.com",
     role:"superuser",
@@ -123,4 +123,3 @@ const thirdUser : UserPermissions = {
     permissions: "denied",
 
 };
-
