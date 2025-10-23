@@ -58,3 +58,13 @@ function substractNumbers(numOne: number = 10, numTwo: number = 5) {
 substractNumbers();
 substractNumbers(50); // 50 changes the default value because in this case we have value for it which is "50".
 substractNumbers(50, 30);
+
+
+// Function with parameter of union type
+
+function printId(id: string | number) {
+    console.log(`Id - ${id} is of type ${typeof id}`)
+}
+
+printId("#10");
+printId(10);

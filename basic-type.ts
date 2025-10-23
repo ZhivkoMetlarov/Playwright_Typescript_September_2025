@@ -72,4 +72,16 @@ if (numberThree<=10) {
     console.log("The number is grater than 50");
 } else {
     console.log("numberOne is not grater than 3");
-}
+};
+
+
+// Union types
+
+let id: string | number;
+id =10;
+id="10";
+
+let result: number | boolean | null;
+
+// Type Alias
+
