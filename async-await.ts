@@ -105,3 +105,37 @@ try {
 } finally {                                    // finnaly block 
     console.log('JSON parser ready');
 }
+
+
+/// try,catch,finally exercise
+function devideNumbers(numOne: number, numTwo: number) {
+    try{
+        if (numTwo === 0) {
+            throw new Error ("Can not devide by zero!");
+        } else {
+            const result: number = numOne/numTwo;
+            console.log(`Result ${result}`);
+        }
+        
+        console.log()
+    } catch (err: unknown) {
+        console.error(`Error: ${err}`)
+    } finally {
+        console.log('Operation finished')
+    }
+}
+
+devideNumbers(20,0)
+
+
+async function getDataSecond(): Promise <void> {
+    try{
+    const resposne = await fetch("https://fakestoreapi.com/products/1");
+    const data: Product = await resposne.json();
+    console.log("data", data);
+    } catch (error: unknown) {
+        console.error(error);
+    }
+}
+
+getDataSecond();
